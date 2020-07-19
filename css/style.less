@@ -1,0 +1,33 @@
+// compress: true
+
+@import "vars";
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: @gray;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*Vlocks*/
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/slider";
+@import "blocks/block";
+@import "blocks/box";
+@import "blocks/form";
+@import "blocks/btn";
+@import "blocks/footer";
+@import "blocks/copyright";
+@import "blocks/modal";

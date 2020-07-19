@@ -1,0 +1,70 @@
+// main: ../style.less
+
+nav {
+    background: none;
+    float: right;
+    margin-top: -45px;
+}
+
+.nav__link {
+  position: relative;
+}
+
+ .dws-menu *{
+  margin: 0;
+  padding: 0;
+ }
+
+ .dws-menu ul,
+ .dws-menu ol{
+  list-style: none;
+ }
+
+ .dws-menu > ul{
+  display: flex;
+  justify-content: center;
+ }
+
+ .dws-menu > ul li a{
+  display: block;
+  padding: 20px 15px 20px 15px;
+  font-size: 18px;
+  color: @white;
+  text-decoration: none;
+  text-transform:uppercase;
+  transition: all 0.3s ease;
+  z-index: 15;
+ }
+
+ .dws-menu li a:hover{
+  color: @brown-light;
+  transition: all 0.3s ease;
+ }
+ 
+ /*sub menu*/
+ .dws-menu li ul{
+  position: absolute;
+  min-width: 150px;
+  display: none;
+  z-index: 15;
+ }
+
+ .dws-menu li > ul li a{
+  padding: 5px;
+  text-transform: uppercase;
+  background: @gray;
+  font-size: 16px;
+
+  border-bottom: 1px solid #fff;
+
+ }
+
+ .dws-menu li > ul li ul {
+  position: absolute;
+  right: -150px;
+  top: 0;
+ }
+
+ .dws-menu li:hover > ul{
+  display: block;
+ }

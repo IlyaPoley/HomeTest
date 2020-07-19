@@ -1,0 +1,89 @@
+// main: ../style.less
+.modal {
+    display: none;
+    width: 1240px;
+    height: 800px;
+ 
+
+    background-color: fade(@white,80%);
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    z-index: 1000;
+    transform: translate(-50%, 0%);
+}   
+
+.modal__area {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 360px;
+    margin: 0 auto;
+
+    background-color: @gray;
+}
+
+.modal__area_title {
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: @white;
+}
+
+.modal__wrapper {
+    display: flex;
+
+    width: 600px;
+    height: 360px;
+    margin: auto;
+
+    background-color: @gray;
+}
+
+.modal__access {
+    width: 50%;
+    margin-left: 80px;
+}
+
+.modal__access_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: @white;
+} 
+
+
+.modal__registration {
+    width: 50%;
+}
+
+
+.modal__registration_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: @white;
+
+}
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 41px;
+    line-height: 25px;
+    color: @white;
+    cursor: pointer;
+}
+
+#area {
+    display: none;
+}
